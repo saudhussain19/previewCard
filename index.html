@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fraunces:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">    
+<title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background: hsl(30, 38%, 92%);
+    }
+    h1{
+       font-family: fraunces ;
+       font-weight: 700; 
+       margin: 0;
+    }
+    h4{
+        font-family: Montserrat;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    .container2{
+        display: flex;
+         position: absolute; 
+        left: 50%;
+        top: 50%; 
+        transform: translate(-50%, -50%);
+        /* border: 5px solid #FFFF00; */
+        padding: 10px;
+    }
+    img{
+        width: 230px;
+    }
+    #description{
+        display: flex;
+        flex-direction: column;
+        /* border: 5px solid #FFFF00; */
+        background: white;
+        width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #discount{
+        padding-top: 20px;
+    }
+    #discount p{
+        display: inline;
+    }
+    #newPrice{
+        color: hsl(158, 50%, 37%);
+        font-size: 30px;
+        font-weight: 1000;
+        margin-right: 20px;
+    }
+    #oldPrice{
+        font-size: 14px;
+        position: absolute;
+        /* bottom: 0; */
+        padding-bottom: 500px;
+        text-decoration-line:line-through;
+    }
+
+    button{
+        width: 150px;
+        align-self: center;
+        margin-top: 10px;
+        color: white;
+        background: hsl(159, 94%, 12%);
+        border-radius: 10px;
+        padding: 5px;
+        border-color:hsl(159, 94%, 12%) ;
+    }   
+    #abt{
+        font-family: Montserrat;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+</style>
+<body>
+    <section class="container">
+        <div class="container2">        
+            <img src="image-product-desktop.jpg" alt="">
+            <div id="description">
+                <h4>PERFUME</h4>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+                <p id="abt">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL. </p>
+               <div id="discount">
+                <p id="newPrice">$149.99</p>
+                <p id="oldPrice">$169.99</p>
+               </div>
+                <button>Add to Cart</button>
+            
+        </div>
+    </section>
+</body>
+</html>
